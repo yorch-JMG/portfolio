@@ -17,7 +17,7 @@ export default function Home() {
       <AnimatePresence>
         {showAnimation && (
           <motion.div
-            className="w-20 h-20 bg-white rounded-sm m-auto"
+            className="w-20 h-20 bg-base-text-softer-rose rounded-sm m-auto"
             animate={{rotate: 360}}
             transition={{
               type: 'spring',

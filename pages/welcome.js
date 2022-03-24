@@ -1,40 +1,29 @@
-import Image from "next/image";
-import { FaGithub, FaGitlab, FaLinkedin } from 'react-icons/fa'
+import {Navbars} from '../components/navbars';
+import {motion} from 'framer-motion';
+import {useState} from 'react';
 
 export default function Welcome() {
+  const [showCursor, setShowCursor] = useState(true);
+  setTimeout(() => {
+    setShowCursor(!showCursor);
+  }, 1000);
   return (
-    <div>
-      <div className="font-main justify-center max-w-3xl mx-auto">
-        <div className="w-full p-2 border border-white mt-5">
-          <ul className="flex text-white justify-between px-5 items-center">
-            <a href="/welcome">
-              <li className="text-2xl">Welcome</li>
-            </a>
-            <a href="/welcome">
-              <li>Projects</li>
-            </a>
-            <a href="/welcome">
-              <li>Projects</li>
-            </a>
-            <a href="/welcome">
-              <li>Projects</li>
-            </a>
-            <a href="/welcome">
-              <li>Projects</li>
-            </a>
-          </ul>
+    <div className="max-w-3xl mx-auto">
+      <Navbars />
+      <div className="flex w-full justify-between pt-5 px-10 items-center">
+        <div className='w-1/2'>
+          <h1 className="text-3xl font-extrabold text-base-text-color">
+            Jorge M
+          </h1>
         </div>
-        <ul className="flex flex-col h-1/4 fixed right-0 text-white justify-between px-5 top-1/3 items-center pl-2">
-          <a href="/welcome">
-						<FaGithub size='2rem'/>
-          </a>
-          <a href="/welcome">
-						<FaGitlab size='2rem'/>
-          </a>
-          <a href="/welcome">
-						<FaLinkedin size='2rem'/>
-          </a>
-        </ul>
+        <div className="flex items-center justify-between w-1/4">
+          <h2 className="text-4xl font-extrabold text-base-text-color">
+            Web Dev
+          </h2>
+          {showCursor && (
+            <div className="bg-base-text-color w-3 h-8 right-0" />
+          )}
+        </div>
       </div>
     </div>
   );
