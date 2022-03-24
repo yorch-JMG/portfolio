@@ -9,7 +9,7 @@ export default function Home() {
     setTimeout(() => {
       setShowAnimation(false);
       router.push('/welcome');
-    }, 2000);
+    }, 1900);
   });
 
   return (
@@ -17,13 +17,14 @@ export default function Home() {
       <AnimatePresence>
         {showAnimation && (
           <motion.div
-            className="w-20 h-20 bg-base-text-softer-rose rounded-sm m-auto"
-            animate={{rotate: 360}}
+            className="w-20 h-20 bg-base-text-color rounded-sm m-auto"
+            initial={{opacity: 1}}
+            animate={{rotate: 360, opacity: 0}}
             transition={{
               type: 'spring',
               ease: 'linear',
-              bounce: 0.5,
-              duration: 2,
+              bounce: 1,
+              duration: 1,
             }}
           />
         )}
