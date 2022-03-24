@@ -16,17 +16,44 @@ export default function Home() {
     <div className="h-screen flex">
       <AnimatePresence>
         {showAnimation && (
-          <motion.div
-            className="w-20 h-20 bg-base-text-color rounded-sm m-auto"
-            initial={{opacity: 1}}
-            animate={{rotate: 360, opacity: 0}}
-            transition={{
-              type: 'spring',
-              ease: 'linear',
-              bounce: 1,
-              duration: 1,
-            }}
-          />
+          <>
+            <motion.div
+              className="w-32 h-32 bg-base-text-color rounded-sm m-auto"
+              initial={{opacity: 1}}
+              animate={{rotate: 360}}
+              transition={{
+                type: 'spring',
+                ease: 'linear',
+                duration: 1,
+                repeat: 2,
+              }}
+              exit={{opacity: 0}}
+            />
+            <motion.div
+              className="w-32 h-32 bg-base-text-color rounded-sm m-auto"
+              initial={{opacity: 1}}
+              animate={{rotate: 360}}
+              transition={{
+                type: 'spring',
+                ease: 'linear',
+                duration: 1,
+                repeat: 2,
+              }}
+              exit={{opacity: 0}}
+            />
+            <motion.div
+              className="w-32 h-32 bg-base-text-color rounded-sm m-auto"
+              initial={{opacity: 1}}
+              animate={{rotate: 360}}
+              transition={{
+                type: 'spring',
+                ease: 'linear',
+                duration: 1,
+                repeat: 2,
+              }}
+              exit={{opacity: 0}}
+            />
+          </>
         )}
       </AnimatePresence>
     </div>
