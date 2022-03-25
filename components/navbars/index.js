@@ -22,7 +22,7 @@ export const Navbars = () => {
           </a>
         </ul>
       </div>
-      <ul className="flex flex-col h-1/4 fixed right-0 text-harder-text-color justify-between px-5 top-1/3 items-center pl-2">
+      <ul className="flex flex-col h-1/4 fixed right-3 text-harder-text-color justify-between px-5 top-1/3 items-center">
         <a href="/welcome">
           <FaGithub size="2rem" />
         </a>
