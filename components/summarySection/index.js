@@ -18,18 +18,19 @@ import {
 } from 'react-icons/di';
 export const SummarySection = () => {
   return (
-    <div className="w-full h-fit px-4 pt-8">
+    <div className="w-full h-fit px-4 pb-12 lg:pb-0 lg:pt-8">
       <div className="py-5">
         <h3 className="text-base-text-color text-3xl font-bold pb-3">
           Summary
         </h3>
-        <p className="text-base-text-color text-xl">
+        <p className="text-base-text-color lg:text-xl">
           Hello, I&apos;m a software engineer that likes to learn new things and
           always seek to improve. Web development is the field I have actual
-          work experience but I&apos;m always interested to explore other fields.
+          work experience but I&apos;m always interested to explore other
+          fields.
         </p>
       </div>
-      <div className="text-harder-text-color pt-5 mx-auto">
+      <div className="text-harder-text-color lg:pt-5 mx-auto">
         <div className="py-2">
           <h4 className="text-base-text-color text-xl font-semibold text-center">
             Technologies
@@ -51,7 +52,7 @@ export const SummarySection = () => {
           <h4 className="text-base-text-color text-xl font-semibold text-center">
             Programming languages
           </h4>
-          <h2 className="text-base-text-color text-xl text-center pt-2">
+          <h2 className="text-base-text-color lg:text-xl text-center pt-2">
             (Most experience with the language down to basic knowledge)
           </h2>
           <div className="flex space-x-3 justify-center pt-5">

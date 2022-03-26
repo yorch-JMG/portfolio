@@ -18,7 +18,7 @@ export default function Home() {
         {showAnimation && (
           <>
             <motion.div
-              className="w-32 h-32 bg-base-text-color rounded-sm m-auto"
+					className="w-20 h-20 lg:w-32 lg:h-32 bg-base-text-color rounded-sm m-auto"
               initial={{opacity: 1}}
               animate={{rotate: 360}}
               transition={{
@@ -30,7 +30,7 @@ export default function Home() {
               exit={{opacity: 0}}
             />
             <motion.div
-              className="w-32 h-32 bg-base-text-color rounded-sm m-auto"
+              className="w-20 h-20 lg:w-32 lg:h-32 bg-base-text-color rounded-sm m-auto"
               initial={{opacity: 1}}
               animate={{rotate: 360}}
               transition={{
@@ -42,7 +42,7 @@ export default function Home() {
               exit={{opacity: 0}}
             />
             <motion.div
-              className="w-32 h-32 bg-base-text-color rounded-sm m-auto"
+              className="w-20 h-20 lg:w-32 lg:h-32 bg-base-text-color rounded-sm m-auto"
               initial={{opacity: 1}}
               animate={{rotate: 360}}
               transition={{
