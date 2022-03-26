@@ -24,9 +24,9 @@ export const SummarySection = () => {
           Summary
         </h3>
         <p className="text-base-text-color text-xl">
-          Hello, I'm a software engineer that likes to learn new things and
+          Hello, I&apos;m a software engineer that likes to learn new things and
           always seek to improve. Web development is the field I have actual
-          work experience but I'm always interested to explore other fields.
+          work experience but I&apos;m always interested to explore other fields.
         </p>
       </div>
       <div className="text-harder-text-color pt-5 mx-auto">
@@ -68,7 +68,7 @@ export const SummarySection = () => {
       </div>
       <div className="text-harder-text-color pt-5 mx-auto">
         <h4 className="text-base-text-color text-xl font-semibold text-center">
-          Operating systems I'm experienced with
+          Operating systems I&apos;m experienced with
         </h4>
         <div className="flex space-x-3 justify-center pt-5">
           <FaLinux size="3rem" />
