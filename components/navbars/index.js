@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {FaGithub, FaGitlab, FaLinkedin} from 'react-icons/fa';
 
 export const Navbars = () => {
@@ -5,21 +6,21 @@ export const Navbars = () => {
     <div className="font-main justify-center max-w-3xl mx-auto">
       <div className="w-full p-2 border border-base-text-color mt-5">
         <ul className="flex text-base-text-color justify-between px-5 items-center">
-          <a href="/welcome">
+          <Link href="/welcome">
             <li className="text-2xl">Welcome</li>
-          </a>
-          <a href="/welcome">
+          </Link>
+          <Link href="/welcome">
             <li>Projects</li>
-          </a>
-          <a href="/welcome">
+          </Link>
+          <Link href="/welcome">
             <li>About me</li>
-          </a>
-          <a href="/welcome">
+          </Link>
+          <Link href="/welcome">
             <li>Contact me</li>
-          </a>
-          <a href="/welcome">
+          </Link>
+          <Link href="/welcome">
             <li>Exp</li>
-          </a>
+          </Link>
         </ul>
       </div>
       <ul className="flex flex-col h-1/4 fixed right-3 text-harder-text-color justify-between px-5 top-1/3 items-center">
