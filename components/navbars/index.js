@@ -24,15 +24,15 @@ export const Navbars = () => {
         </ul>
       </div>
       <ul className="flex flex-col h-1/4 fixed right-3 text-harder-text-color justify-between px-5 top-1/3 items-center">
-        <a href="/welcome">
+        <Link href="/welcome">
           <FaGithub size="2rem" />
-        </a>
-        <a href="/welcome">
+        </Link>
+        <Link href="/welcome">
           <FaGitlab size="2rem" />
-        </a>
-        <a href="/welcome">
+        </Link>
+        <Link href="/welcome">
           <FaLinkedin size="2rem" />
-        </a>
+        </Link>
       </ul>
     </div>
   );
