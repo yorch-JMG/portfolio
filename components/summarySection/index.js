@@ -20,9 +20,9 @@ export const SummarySection = () => {
   return (
 		<div className="w-full h-fit px-4 md:px-10 pb-12 lg:pb-0 lg:pt-8">
       <div className="py-5">
-        <h3 className="text-base-text-color text-3xl font-bold pb-3">
+        <h1 className="text-base-text-color text-3xl font-bold pb-3">
           Summary
-        </h3>
+        </h1>
         <p className="text-base-text-color lg:text-xl">
           Hello, I&apos;m a software engineer that likes to learn new things and
           always seek to improve. Web development is the field I have actual

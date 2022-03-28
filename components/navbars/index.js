@@ -21,32 +21,35 @@ export const Navbars = () => {
         </div>
 
         <ul
-          className={`inline-block md:flex md:w-2/3 lg:w-2/3 ${
-            menuOpened ? 'inline-block' : 'hidden'
-          } lg:flex text-base-text-color md:justify-between lg:justify-between px-5 items-center`}>
+          className={`md:flex md:w-2/3 lg:w-2/3 ${
+            menuOpened ? 'flex flex-col' : 'hidden'
+					} md:flex-row lg:flex-row text-base-text-color md:justify-between lg:justify-between px-5 items-center text-xl`}>
           <Link href="/welcome">
-            <li className="md:flex lg:flex">Projects</li>
+		<a className="w-full md:flex lg:flex">About me</a>
+          </Link>
+          <Link href="/projects">
+		<a className="w-full md:flex lg:flex">Projects</a>
           </Link>
           <Link href="/welcome">
-            <li className="md:flex lg:flex">About me</li>
-          </Link>
-          <Link href="/welcome">
-            <li className="md:flex lg:flex">Contact me</li>
-          </Link>
-          <Link href="/welcome">
-            <li className="md:flex lg:flex">Exp</li>
+		<a className="w-full md:flex lg:flex">Contact me</a>
           </Link>
         </ul>
       </div>
       <ul className="lg:flex flex-col h-1/4 fixed right-3 text-harder-text-color justify-between px-5 top-1/3 items-center">
         <Link href="/welcome">
-          <FaGithub className="hidden lg:flex" size="2rem" />
+          <a href="">
+            <FaGithub className="hidden lg:flex" size="2rem" />
+          </a>
         </Link>
         <Link href="/welcome">
-          <FaGitlab className="hidden lg:flex" size="2rem" />
+          <a href="">
+            <FaGitlab className="hidden lg:flex" size="2rem" />
+          </a>
         </Link>
         <Link href="/welcome">
-          <FaLinkedin className="hidden lg:flex" size="2rem" />
+          <a href="">
+            <FaLinkedin className="hidden lg:flex" size="2rem" />
+          </a>
         </Link>
       </ul>
     </div>
