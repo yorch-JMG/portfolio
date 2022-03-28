@@ -13,14 +13,14 @@ export default function Projects() {
         {name: 'GraphQL'},
         {name: 'TypeORM'},
       ],
-			deploymentUrl: 'https://uruz.vercel.app/',
+      deploymentUrl: 'https://uruz.vercel.app/',
     },
     {
       name: 'Registro guias',
       description:
         'System made for Caracol Museum to automate guide checktime process.',
       stack: [{name: 'React'}, {name: 'NextJS'}, {name: 'NodeJS'}],
-			codeUrl: 'https://github.com/yorch-JMG/registro-guias-api'
+      codeUrl: 'https://github.com/yorch-JMG/registro-guias-api',
     },
     {
       name: 'Caracol web',
@@ -33,14 +33,14 @@ export default function Projects() {
         {name: 'Graphql'},
         {name: 'TypeORM'},
       ],
-			codeUrl: 'https://github.com/ReynaldoCerpa/caracol-web'
+      codeUrl: 'https://github.com/ReynaldoCerpa/caracol-web',
     },
     {
       name: 'getClass',
       description:
         'Rust command line utility made to learn about Rust lang basics and to get online classes zoom links and passwords.',
       stack: [{name: 'Rust'}],
-			codeUrl: 'https://github.com/yorch-JMG/get-class'
+      codeUrl: 'https://github.com/yorch-JMG/get-class',
     },
   ];
   return (
@@ -51,15 +51,15 @@ export default function Projects() {
       </h1>
       {projects.map(project => {
         return (
-          <>
+          <div key={project.name}>
             <Project
               name={project.name}
               description={project.description}
               stack={project.stack}
-							deploymentUrl={project.deploymentUrl}
-							codeUrl={project.codeUrl}
+              deploymentUrl={project.deploymentUrl}
+              codeUrl={project.codeUrl}
             />
-          </>
+          </div>
         );
       })}
     </div>
