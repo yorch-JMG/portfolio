@@ -18,7 +18,7 @@ import {
 } from 'react-icons/di';
 export const SummarySection = () => {
   return (
-    <div className="w-full h-fit px-4 pb-12 lg:pb-0 lg:pt-8">
+		<div className="w-full h-fit px-4 md:px-10 pb-12 lg:pb-0 lg:pt-8">
       <div className="py-5">
         <h3 className="text-base-text-color text-3xl font-bold pb-3">
           Summary
