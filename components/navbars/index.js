@@ -30,7 +30,7 @@ export const Navbars = () => {
           <Link href="/projects">
 		<a className="w-full md:flex lg:flex">Projects</a>
           </Link>
-          <Link href="/welcome">
+          <Link href="/contact-me">
 		<a className="w-full md:flex lg:flex">Contact me</a>
           </Link>
         </ul>
