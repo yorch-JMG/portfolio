@@ -44,7 +44,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="max-w-3xl mx-auto z-20 font-main">
+    <div className="max-w-3xl mx-auto z-20 font-main pb-5">
       <Navbars />
       <h1 className="text-base-text-color text-5xl font-bold px-5 pt-6">
         Projects
