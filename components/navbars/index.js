@@ -23,15 +23,15 @@ export const Navbars = () => {
         <ul
           className={`md:flex md:w-2/3 lg:w-2/3 ${
             menuOpened ? 'flex flex-col' : 'hidden'
-					} md:flex-row lg:flex-row text-base-text-color md:justify-between lg:justify-between px-5 items-center text-xl`}>
+          } md:flex-row lg:flex-row text-base-text-color md:justify-between lg:justify-between px-5 items-center text-xl`}>
           <Link href="/welcome">
-		<a className="w-full md:flex lg:flex">About me</a>
+            <a className="w-full md:flex lg:flex">About me</a>
           </Link>
           <Link href="/projects">
-		<a className="w-full md:flex lg:flex">Projects</a>
+            <a className="w-full md:flex lg:flex">Projects</a>
           </Link>
           <Link href="/contact-me">
-		<a className="w-full md:flex lg:flex">Contact me</a>
+            <button className="w-full md:flex lg:flex">Contact me</button>
           </Link>
         </ul>
       </div>
