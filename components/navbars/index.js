@@ -25,13 +25,19 @@ export const Navbars = () => {
             menuOpened ? 'flex flex-col' : 'hidden'
           } md:flex-row lg:flex-row text-base-text-color md:justify-between lg:justify-between px-5 items-center text-xl`}>
           <Link href="/welcome">
-            <a className="w-full md:flex lg:flex">About me</a>
+            <a href="" className="w-full md:flex lg:flex">
+              About me
+            </a>
           </Link>
           <Link href="/projects">
-            <a className="w-full md:flex lg:flex">Projects</a>
+            <a href="" className="w-full md:flex lg:flex">
+              Projects
+            </a>
           </Link>
           <Link href="/contact-me">
-            <button className="w-full md:flex lg:flex">Contact me</button>
+            <a href="" className="w-full md:flex lg:flex">
+              Contact me
+            </a>
           </Link>
         </ul>
       </div>
