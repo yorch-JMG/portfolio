@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import {FaGithub, FaGitlab, FaLinkedin} from 'react-icons/fa';
 import {GiHamburgerMenu} from 'react-icons/gi';
+import {motion} from 'framer-motion'
 import {useState} from 'react';
 
 export const Navbars = () => {
@@ -25,31 +26,31 @@ export const Navbars = () => {
             menuOpened ? 'flex flex-col' : 'hidden'
           } md:flex-row lg:flex-row text-base-text-color md:justify-between lg:justify-between px-5 items-center text-xl`}>
           <Link href="/welcome">
-            <a className="w-full md:flex lg:flex">About me</a>
+            <motion.a whileHover={{scale: 1.05}} className="w-full md:flex lg:flex">About me</motion.a>
           </Link>
           <Link href="/projects">
-            <a className="w-full md:flex lg:flex">Projects</a>
+            <motion.a whileHover={{scale: 1.05}} className="w-full md:flex lg:flex">Projects</motion.a>
           </Link>
           <Link href="/contact-me">
-            <a className="w-full md:flex lg:flex">Contact me</a>
+            <motion.a whileHover={{scale: 1.05}} className="w-full md:flex lg:flex">Contact me</motion.a>
           </Link>
         </ul>
       </div>
       <ul className="lg:flex flex-col h-1/4 fixed right-3 text-harder-text-color justify-between px-5 top-1/3 items-center">
         <Link href="/welcome">
-          <a>
+          <motion.a whileHover={{scale: 1.05}}>
             <FaGithub className="hidden lg:flex" size="2rem" />
-          </a>
+          </motion.a>
         </Link>
         <Link href="/welcome">
-          <a>
+          <motion.a whileHover={{scale: 1.05}}>
             <FaGitlab className="hidden lg:flex" size="2rem" />
-          </a>
+          </motion.a>
         </Link>
         <Link href="/welcome">
-          <a>
+		<motion.a whileHover={{scale: 1.05}}>
             <FaLinkedin className="hidden lg:flex" size="2rem" />
-          </a>
+          </motion.a>
         </Link>
       </ul>
     </div>

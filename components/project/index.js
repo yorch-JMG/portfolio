@@ -14,7 +14,7 @@ export const Project = ({name, description, stack, deploymentUrl, codeUrl}) => {
           {stack.map(technology => {
             return (
               <>
-                <span className="inline-block mt-2 md:mt-0 lg:mt-0 md:inline lg:inline bg-brown text-base-text-color p-1 rounded-sm px-2 font-semibold">
+                <span className="inline-block mt-2 md:mt-0 lg:mt-0 md:inline lg:inline bg-brown text-background p-1 rounded-sm px-2 font-semibold">
                   {technology.name}
                 </span>
               </>
