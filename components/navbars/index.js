@@ -13,8 +13,8 @@ export const Navbars = ({backgroundYellow}) => {
         className={`flex flex-col md:flex-row lg:flex-row w-10/12 mx-auto justify-between md:mx-0 lg:mx-0 md:w-full lg:w-full p-2 border ${
           backgroundYellow ? 'black' : 'border-base-text-color'
         } mt-5`}>
-        <div className={`flex justify-between px-5${
-              backgroundYellow ? 'black font-bold' : 'text-base-text-color'}`}>
+        <div className={`flex justify-between px-5 ${
+              backgroundYellow ? 'text-black font-bold' : 'text-base-text-color'}`}>
           <Link href="/welcome">
             <a href="#" className="text-2xl">
               Welcome
