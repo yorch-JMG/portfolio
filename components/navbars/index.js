@@ -53,20 +53,20 @@ export const Navbars = ({backgroundYellow}) => {
               Projects
             </motion.a>
           </Link>
-          <Link href="/contact-me">
-            <motion.a
-              href="#"
-              whileHover={{scale: 1.05}}
-              className="w-full md:flex lg:flex justify-center text-center">
-              Contact me
-            </motion.a>
-          </Link>
           <Link href="/timeline">
             <motion.a
               href="#"
               whileHover={{scale: 1.05}}
               className="w-full md:flex lg:flex justify-center text-center">
               Timeline
+            </motion.a>
+          </Link>
+          <Link href="/contact-me">
+            <motion.a
+              href="#"
+              whileHover={{scale: 1.05}}
+              className="w-full md:flex lg:flex justify-center text-center">
+              Contact me
             </motion.a>
           </Link>
         </ul>
