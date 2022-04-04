@@ -6,22 +6,17 @@ import {
   DiDart,
   DiGo,
   DiJava,
-  DiJavascript,
   DiPython,
   DiRust,
   DiHaskell,
   DiPhp,
-  DiAws,
-  DiGit,
-  DiJira,
-  DiTrello,
 } from 'react-icons/di';
-import Link from 'next/link';
+import { SiTypescript, SiJavascript, SiCsharp, SiTrello, SiJira, SiAmazonaws, SiGit, SiGraphql } from 'react-icons/si'
 
 export const SummarySection = () => {
   return (
     <div className="w-full h-fit px-4 md:px-10 pb-12 lg:pb-0 lg:pt-8">
-      <div className="py-5">
+      <div className="py-7">
         <h1 className="text-base-text-color text-3xl font-bold pb-3">
           Summary
         </h1>
@@ -40,12 +35,9 @@ export const SummarySection = () => {
           <div className="flex space-x-3 justify-center pt-5">
             <FaReact size="3rem" />
             <DiNodejs size="3rem" />
+            <SiGraphql size="3rem" />
             <DiMysql size="3rem" />
             <DiPostgresql size="3rem" />
-            <DiGit size="3rem" />
-            <DiAws size="3rem" />
-            <DiJira size="3rem" />
-            <DiTrello size="3rem" />
           </div>
         </div>
       </div>
@@ -58,15 +50,28 @@ export const SummarySection = () => {
             (Most experience with the language down to basic knowledge)
           </h2>
           <div className="flex space-x-3 justify-center pt-5">
-            <DiJavascript size="3rem" />
+            <SiJavascript size="3rem" />
+            <SiTypescript size="3rem" />
             <DiJava size="3rem" />
             <DiPython size="3rem" />
-            <DiRust size="3rem" />
             <DiGo size="3rem" />
+            <DiRust size="3rem" />
+            <SiCsharp size="3rem" />
             <DiDart size="3rem" />
             <DiHaskell size="3rem" />
             <DiPhp size="3rem" />
           </div>
+        </div>
+      </div>
+      <div className="text-harder-text-color pt-5 mx-auto">
+        <h4 className="text-base-text-color text-xl font-semibold text-center">
+					Project management tools
+        </h4>
+        <div className="flex space-x-3 justify-center pt-5">
+            <SiGit size="3rem" />
+            <SiJira size="3rem" />
+            <SiAmazonaws size="3rem" />
+            <SiTrello size="3rem" />
         </div>
       </div>
       <div className="text-harder-text-color pt-5 mx-auto">
