@@ -18,7 +18,7 @@ export default function Timeline() {
                     <h1 className="text-base-text-color font-bold flex-wrap text-2xl md:text-3xl pb-1 md:pb-0">
                       {timelineObject.title}
                     </h1>
-                    <h2 className="text-background bg-harder-text-color font-bold p-1 px-2 rounded-md w-fit">
+						<h2 className="text-background bg-harder-text-color font-bold p-1 px-2 md:mt-2 rounded-md w-fit">
                       {timelineObject.location}
                     </h2>
                   </div>
