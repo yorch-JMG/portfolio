@@ -47,10 +47,10 @@ export default function Timeline() {
                           </ul>
                           <div className="text-base-text-color pt-2">
                             <h5>Technologies used</h5>
-                            <div className="flex pt-2">
+                            <div className="flex flex-wrap pt-2">
                               {project.technologiesUsed.map(technology => {
                                 return (
-                                  <p className="text-background bg-harder-text-color font-bold p-1 px-2 mr-3 rounded-md">
+                                  <p className="text-background bg-harder-text-color w-fit font-bold p-1 px-2 my-1 mx-1 rounded-md">
                                     {technology.name}
                                   </p>
                                 );
