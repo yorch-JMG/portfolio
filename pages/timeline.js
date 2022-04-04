@@ -12,7 +12,7 @@ export default function Timeline() {
         {timelineObjects.map(timelineObject => {
           return (
             <>
-              <div>
+              <div key={timelineObject.title}>
 						<div className="flex flex-col md:flex-row pt-10 md:justify-between md:align-middle md:items-center">
                   <div className="flex flex-col md:justify-between">
                     <h1 className="text-base-text-color font-bold flex-wrap text-2xl md:text-3xl pb-1 md:pb-0">
@@ -29,7 +29,7 @@ export default function Timeline() {
                 <div>
                   {timelineObject.projects.map(project => {
                     return (
-                      <div className="pl-5 pt-2 md:pt-3">
+                      <div key={project.name} className="pl-5 pt-2 md:pt-3">
                         <div className="flex flex-col md:flex-row justify-between">
                           <h1 className="text-base-text-color font-bold text-2xl">
                             {project.name}
@@ -42,15 +42,15 @@ export default function Timeline() {
                           <h4>{project.position}</h4>
                           <ul className="list-disc pl-8 pt-2">
                             {project.bulletPoints.map(bulletPoint => {
-                              return <li>{bulletPoint.text}</li>;
+                              return <li key={bulletPoint.text}>{bulletPoint.text}</li>;
                             })}
                           </ul>
                           <div className="text-base-text-color pt-2">
                             <h5>Technologies used</h5>
                             <div className="flex flex-wrap pt-2">
-                              {project.technologiesUsed.map(technology => {
+                              {project.technologiesUsed.map((index, technology) => {
                                 return (
-                                  <p className="text-background bg-harder-text-color w-fit font-bold p-1 px-2 my-1 mx-1 rounded-md">
+                                  <p key={index} className="text-background bg-harder-text-color w-fit font-bold p-1 px-2 my-1 mx-1 rounded-md">
                                     {technology.name}
                                   </p>
                                 );
