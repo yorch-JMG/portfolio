@@ -27,7 +27,7 @@ export const SummarySection = () => {
           fields.
         </p>
       </div>
-      <div className="text-harder-text-color lg:pt-5 mx-auto">
+      <div className="text-harder-text-color py-5 mx-auto">
         <div className="py-2">
           <h4 className="text-base-text-color text-xl font-semibold text-center">
             Technologies
@@ -41,7 +41,7 @@ export const SummarySection = () => {
           </div>
         </div>
       </div>
-      <div className="text-harder-text-color pt-5 mx-auto space-y-2">
+      <div className="text-harder-text-color py-5 mx-auto space-y-2">
         <div className="py-2">
           <h4 className="text-base-text-color text-xl font-semibold text-center">
             Programming languages
@@ -63,7 +63,7 @@ export const SummarySection = () => {
           </div>
         </div>
       </div>
-      <div className="text-harder-text-color pt-5 mx-auto">
+      <div className="text-harder-text-color py-5 mx-auto">
         <h4 className="text-base-text-color text-xl font-semibold text-center">
 					Project management tools
         </h4>
@@ -74,7 +74,7 @@ export const SummarySection = () => {
             <SiTrello size="3rem" />
         </div>
       </div>
-      <div className="text-harder-text-color pt-5 mx-auto">
+      <div className="text-harder-text-color py-5 mx-auto">
         <h4 className="text-base-text-color text-xl font-semibold text-center">
           Operating systems I&apos;m experienced with
         </h4>

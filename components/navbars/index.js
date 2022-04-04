@@ -13,8 +13,10 @@ export const Navbars = ({backgroundYellow}) => {
         className={`flex flex-col md:flex-row lg:flex-row w-10/12 mx-auto justify-between md:mx-0 lg:mx-0 md:w-full lg:w-full p-2 border ${
           backgroundYellow ? 'black' : 'border-base-text-color'
         } mt-5`}>
-        <div className={`flex justify-between px-5 ${
-              backgroundYellow ? 'text-black font-bold' : 'text-base-text-color'}`}>
+        <div
+          className={`flex justify-between px-5 ${
+            backgroundYellow ? 'text-black font-bold' : 'text-base-text-color'
+          }`}>
           <Link href="/welcome">
             <a href="#" className="text-2xl">
               Welcome
@@ -30,14 +32,16 @@ export const Navbars = ({backgroundYellow}) => {
         </div>
 
         <ul
-          className={`md:flex md:w-2/3 lg:w-2/3 ${
+          className={`md:flex md:w-full lg:w-full ${
             menuOpened ? 'flex flex-col' : 'hidden'
-					} md:flex-row lg:flex-row ${backgroundYellow ? "text-black" : "text-base-text-color"}  md:justify-between lg:justify-between px-5 items-center text-xl`}>
+          } md:flex-row lg:flex-row ${
+            backgroundYellow ? 'text-black' : 'text-base-text-color'
+					}  md:justify-between lg:justify-between md:pr-4 lg:pr-8 md:px-8 lg:px-8 items-center text-xl`}>
           <Link href="/welcome">
             <motion.a
               href="#"
               whileHover={{scale: 1.05}}
-              className="w-full md:flex lg:flex">
+              className="w-full md:flex lg:flex justify-center text-center">
               About me
             </motion.a>
           </Link>
@@ -45,7 +49,7 @@ export const Navbars = ({backgroundYellow}) => {
             <motion.a
               href="#"
               whileHover={{scale: 1.05}}
-              className="w-full md:flex lg:flex">
+              className="w-full md:flex lg:flex justify-center text-center">
               Projects
             </motion.a>
           </Link>
@@ -53,8 +57,16 @@ export const Navbars = ({backgroundYellow}) => {
             <motion.a
               href="#"
               whileHover={{scale: 1.05}}
-              className="w-full md:flex lg:flex">
+              className="w-full md:flex lg:flex justify-center text-center">
               Contact me
+            </motion.a>
+          </Link>
+          <Link href="/timeline">
+            <motion.a
+              href="#"
+              whileHover={{scale: 1.05}}
+              className="w-full md:flex lg:flex justify-center text-center">
+              Timeline
             </motion.a>
           </Link>
         </ul>
