@@ -9,16 +9,16 @@ export default function Timeline() {
         Timeline
       </h1>
       <div className="w-full px-3 md:px-5">
-        {timelineObjects.map(timelineObject => {
+        {timelineObjects.map((timelineObject, index) => {
           return (
             <>
-              <div key={timelineObject.title}>
-						<div className="flex flex-col md:flex-row pt-10 md:justify-between md:align-middle md:items-center">
+              <div key={timelineObject.title + index}>
+                <div className="flex flex-col md:flex-row pt-10 md:justify-between md:align-middle md:items-center">
                   <div className="flex flex-col md:justify-between">
                     <h1 className="text-base-text-color font-bold flex-wrap text-2xl md:text-3xl pb-1 md:pb-0">
                       {timelineObject.title}
                     </h1>
-						<h2 className="text-background bg-harder-text-color font-bold p-1 px-2 md:mt-2 rounded-md w-fit">
+                    <h2 className="text-background bg-harder-text-color font-bold p-1 px-2 md:mt-2 rounded-md w-fit">
                       {timelineObject.location}
                     </h2>
                   </div>
@@ -41,20 +41,26 @@ export default function Timeline() {
                         <div className="text-base-text-color pt-2">
                           <h4>{project.position}</h4>
                           <ul className="list-disc pl-8 pt-2">
-                            {project.bulletPoints.map(bulletPoint => {
-                              return <li key={bulletPoint.text}>{bulletPoint.text}</li>;
+                            {project.bulletPoints.map((bulletPoint, index) => {
+                              return (
+                                <li key={index + 3}>{bulletPoint.text}</li>
+                              );
                             })}
                           </ul>
                           <div className="text-base-text-color pt-2">
                             <h5>Technologies used</h5>
                             <div className="flex flex-wrap pt-2">
-                              {project.technologiesUsed.map((index, technology) => {
-                                return (
-                                  <p key={index} className="text-background bg-harder-text-color w-fit font-bold p-1 px-2 my-1 mx-1 rounded-md">
-                                    {technology.name}
-                                  </p>
-                                );
-                              })}
+                              {project.technologiesUsed.map(
+                                (technology, index) => {
+                                  return (
+                                    <p
+                                      key={index+technology.name}
+                                      className="text-background bg-harder-text-color w-fit font-bold p-1 px-2 my-1 mx-1 rounded-md">
+                                      {technology.name}
+                                    </p>
+                                  );
+                                },
+                              )}
                             </div>
                           </div>
                         </div>
