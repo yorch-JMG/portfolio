@@ -8,8 +8,6 @@ import {
   DiJava,
   DiPython,
   DiRust,
-  DiHaskell,
-  DiPhp,
 } from 'react-icons/di';
 import {
   SiTypescript,
@@ -71,8 +69,6 @@ export const SummarySection = () => {
             <DiRust size="3rem" />
             <SiCsharp size="3rem" />
             <DiDart size="3rem" />
-            <DiHaskell size="3rem" />
-            <DiPhp size="3rem" />
           </div>
         </div>
       </div>
