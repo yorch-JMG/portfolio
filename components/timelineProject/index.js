@@ -1,5 +1,5 @@
 export const TimelineProject = ({
-  key,
+  id,
   name,
   date,
   position,
@@ -7,7 +7,7 @@ export const TimelineProject = ({
   technologiesUsed,
 }) => {
   return (
-    <div key={key} className="pl-5 pt-2 md:pt-3">
+    <div key={id} className="pl-5 pt-2 md:pt-3">
       <div className="flex flex-col md:flex-row justify-between">
         <h1 className="text-base-text-color font-bold text-2xl">{name}</h1>
         <h2 className="text-base-text-color font-semibold md:text-lg">

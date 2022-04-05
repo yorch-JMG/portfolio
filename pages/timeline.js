@@ -14,7 +14,7 @@ export default function Timeline() {
           return (
             <>
               <TimelineSection
-                key={timelineObject.title + index}
+                id={timelineObject.title + index}
                 title={timelineObject.title}
                 location={timelineObject.location}
                 date={timelineObject.date}
