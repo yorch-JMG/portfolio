@@ -1,5 +1,7 @@
 import '../styles/globals.css';
 import {motion} from 'framer-motion';
+import Head from 'next/head';
+
 function MyApp({Component, pageProps, router}) {
   return (
     <motion.div
@@ -14,6 +16,9 @@ function MyApp({Component, pageProps, router}) {
           opacity: 1,
         },
       }}>
+      <Head>
+        <title>My portfolio</title>
+      </Head>
       <Component {...pageProps} />
     </motion.div>
   );
