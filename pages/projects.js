@@ -16,6 +16,20 @@ export default function Projects() {
       deploymentUrl: 'https://uruz.vercel.app/',
     },
     {
+      name: 'My portfolio',
+      description:
+        'Fully responsive portfolio website made with React. Animations provided by Framer Motion and styling made with TailwindCSS.',
+      stack: [{name: 'React'}, {name: 'NextJS'}, {name: 'TailwindCSS'}],
+      codeUrl: 'https://github.com/yorch-JMG/portfolio',
+    },
+    {
+      name: 'Rust landing page clone',
+      description:
+        'Fully responsive landing page made with React and TailwindCSS recreating Rust lang page.',
+      stack: [{name: 'React'}, {name: 'NextJS'}, {name: 'TailwindCSS'}],
+      codeUrl: 'https://github.com/yorch-JMG/rust-page',
+    },
+    {
       name: 'Registro guias',
       description:
         'System made for Caracol Museum to automate guide checktime process.',

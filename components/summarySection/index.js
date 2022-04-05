@@ -11,7 +11,18 @@ import {
   DiHaskell,
   DiPhp,
 } from 'react-icons/di';
-import { SiTypescript, SiJavascript, SiCsharp, SiTrello, SiJira, SiAmazonaws, SiGit, SiGraphql } from 'react-icons/si'
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiFramer,
+  SiJavascript,
+  SiCsharp,
+  SiTrello,
+  SiJira,
+  SiAmazonaws,
+  SiGit,
+  SiGraphql,
+} from 'react-icons/si';
 
 export const SummarySection = () => {
   return (
@@ -38,6 +49,8 @@ export const SummarySection = () => {
             <SiGraphql size="3rem" />
             <DiMysql size="3rem" />
             <DiPostgresql size="3rem" />
+            <SiTailwindcss size="3rem" />
+            <SiFramer size="3rem" />
           </div>
         </div>
       </div>
@@ -65,13 +78,13 @@ export const SummarySection = () => {
       </div>
       <div className="text-harder-text-color py-5 mx-auto">
         <h4 className="text-base-text-color text-xl font-semibold text-center">
-					Project management tools
+          Project management tools
         </h4>
         <div className="flex space-x-3 justify-center pt-5">
-            <SiGit size="3rem" />
-            <SiJira size="3rem" />
-            <SiAmazonaws size="3rem" />
-            <SiTrello size="3rem" />
+          <SiGit size="3rem" />
+          <SiJira size="3rem" />
+          <SiAmazonaws size="3rem" />
+          <SiTrello size="3rem" />
         </div>
       </div>
       <div className="text-harder-text-color py-5 mx-auto">
