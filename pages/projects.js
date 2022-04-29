@@ -60,22 +60,24 @@ export default function Projects() {
   return (
     <div className="max-w-3xl mx-auto z-20 font-main pb-5">
       <Navbars />
-      <h1 className="text-base-text-color text-5xl font-bold px-5 pt-6">
-        Projects
-      </h1>
-      {projects.map(project => {
-        return (
-          <div key={project.name}>
-            <Project
-              name={project.name}
-              description={project.description}
-              stack={project.stack}
-              deploymentUrl={project.deploymentUrl}
-              codeUrl={project.codeUrl}
-            />
-          </div>
-        );
-      })}
+      <div className='pt-20'>
+        <h1 className="text-base-text-color text-5xl font-bold px-5 pt-6">
+          Projects
+        </h1>
+        {projects.map(project => {
+          return (
+            <div key={project.name}>
+              <Project
+                name={project.name}
+                description={project.description}
+                stack={project.stack}
+                deploymentUrl={project.deploymentUrl}
+                codeUrl={project.codeUrl}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

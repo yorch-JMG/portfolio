@@ -14,9 +14,9 @@ const submitForm = () => {
   setDescriptionError(description.length == 0);
 }
   return (
-    <div className="relative z-10 h-screen overflow-hidden">
+    <div className="max-w-3xl mx-auto z-20 font-main pb-5">
       <Navbars />
-      <div className="pt-10 md:pt-20 lg:pt-25 flex h-fit">
+      <div className="pt-20">
         <div className="text-base-text-color flex flex-col w-full items-center px-3 space-y-4">
           <h2 className="text-7xl font-extrabold px-5 font-main pb-5">
             Contact me
