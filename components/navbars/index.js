@@ -8,9 +8,9 @@ export const Navbars = ({backgroundYellow}) => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   return (
-    <div className="font-main justify-center w-full h-fit lg:max-w-3xl mx-auto">
+    <div className="absolute font-main justify-center w-full h-fit lg:max-w-3xl mx-auto">
       <div
-        className={`flex flex-col md:flex-row lg:flex-row w-10/12 mx-auto justify-between md:mx-0 lg:mx-0 md:w-full lg:w-full p-2 border ${
+        className={`flex flex-col bg-background md:flex-row lg:flex-row w-10/12 mx-auto justify-between md:mx-0 lg:mx-0 md:w-full lg:w-full p-2 border ${
           backgroundYellow ? 'black' : 'border-base-text-color'
         } mt-5`}>
         <div
