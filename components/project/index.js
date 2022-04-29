@@ -1,5 +1,5 @@
 import {MdOpenInNew} from 'react-icons/md';
-export const Project = ({name, description, stack, deploymentUrl, codeUrl}) => {
+export const Project = ({name, description, stack, deploymentUrl, codeUrl, codeUrl2}) => {
   return (
     <>
       <div className="w-full px-5 pt-5 pb-3">
@@ -35,6 +35,14 @@ export const Project = ({name, description, stack, deploymentUrl, codeUrl}) => {
             <div>
               <div className="flex w-fit border text-base-text-color items-center space-x-1 p-1 px-3 rounded-sm mt-4">
                 <a href={codeUrl}>Go and see the code for this project</a>
+                <MdOpenInNew />
+              </div>
+            </div>
+          )}
+          {codeUrl2 && (
+            <div>
+              <div className="flex w-fit border text-base-text-color items-center space-x-1 p-1 px-3 rounded-sm mt-4">
+                <a href={codeUrl}>Go and see the code for the server</a>
                 <MdOpenInNew />
               </div>
             </div>

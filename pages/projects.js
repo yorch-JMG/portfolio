@@ -56,6 +56,14 @@ export default function Projects() {
       stack: [{name: 'Rust'}],
       codeUrl: 'https://github.com/yorch-JMG/get-class',
     },
+    {
+      name: 'Encryption and decryption chat console app',
+      description:
+        'Rust command line client and server for socket communication with client to client Encryption',
+      stack: [{name: 'Rust'}],
+			codeUrl: 'https://github.com/yorch-JMG/chat_client',
+			codeUrl2: 'https://github.com/yorch-JMG/chat_server'
+    },
   ];
   return (
     <div className="max-w-3xl mx-auto z-20 font-main pb-5">
@@ -73,6 +81,7 @@ export default function Projects() {
                 stack={project.stack}
                 deploymentUrl={project.deploymentUrl}
                 codeUrl={project.codeUrl}
+								codeUrl2={project.codeUrl2}
               />
             </div>
           );
